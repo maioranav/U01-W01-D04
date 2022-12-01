@@ -15,6 +15,8 @@
       rel="stylesheet">
    <link rel="stylesheet" href="./assets/css/font-awesome.css">
    <link rel="stylesheet" href="./assets/css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
    <title>Sviluppo di una pagina web - Blog Epicode</title>
 </head>
 
@@ -62,7 +64,7 @@
          </section>
          <section>
             <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale</p>
-            <table>
+            <table class="prova ">
                <caption>Diffusione dei CSS</caption>
                <tr>
                   <th>Anno</th>
@@ -142,6 +144,20 @@
       <section class="footer-desc">Testata online di Mario Rossi, registrata con prot. n. 213/2018 - via Luigi Einaudi 2
          - Milano. P.IVA 00112233 <a href="mailto:info@epicode.school">info@epicode.school</a></section>
    </footer>
+
+   <script>
+      $(window).scroll(function () {
+         var scroll = $(window).scrollTop();
+         var tabella = document.getElementsByClassName('prova');
+         console.log(scroll);
+         if (scroll > 320) {
+            $(tabella).addClass('compari');
+         }
+         if (scroll < 320) {
+            $(tabella).removeClass('compari');
+         }
+      });
+   </script>
 </body>
 
 </html>

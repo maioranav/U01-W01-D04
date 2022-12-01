@@ -297,3 +297,15 @@ fieldset input {
     justify-content: right;
   }
 }
+.prova {
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -200px;
+  transition: opacity 4s, margin-top 2s;
+}
+.compari {
+  height: 100%;
+  visibility: unset;
+  margin-top: 20px;
+  opacity: 1;
+}

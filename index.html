@@ -64,7 +64,7 @@
          </section>
          <section>
             <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale</p>
-            <table class="prova ">
+            <table class="nascosto ">
                <caption>Diffusione dei CSS</caption>
                <tr>
                   <th>Anno</th>
@@ -148,13 +148,13 @@
    <script>
       $(window).scroll(function () {
          var scroll = $(window).scrollTop();
-         var tabella = document.getElementsByClassName('prova');
+         var tabella = document.getElementsByClassName('nascosto');
          console.log(scroll);
          if (scroll > 320) {
-            $(tabella).addClass('compari');
+            $(tabella).addClass('mostra');
          }
          if (scroll < 320) {
-            $(tabella).removeClass('compari');
+            $(tabella).removeClass('mostra');
          }
       });
    </script>

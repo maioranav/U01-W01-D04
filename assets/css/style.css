@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  background: url(../img/sfondo.png);
+  color: rgb(43, 43, 43);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  /*  background-color: rgb(104, 107, 255); */
+  background: linear-gradient(180deg, #0099cc, #007788);
+  color: white;
+  padding: 20px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 20px;
+  box-shadow: 3px 3px 3px #000000;
+}
+.logo-img h5 {
+  padding: 2em 0;
+  font-size: 1.1em;
+  margin: 0;
+  text-shadow: 3px 3px 3px gray;
+}
+.logo-img {
+  padding: 0 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.logo-img img {
+  height: 4vh;
+}
+navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  font-size: 20px;
+  width: 100%;
+}
+navbar a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 3px 3px 3px gray;
+}
+navbar a:hover {
+  color: orange;
+}
+navbar ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+navbar li {
+  /*width: 100px;*/
+  padding: 0.3em 30px;
+  margin: 0 auto;
+  font-size: 0.9em;
+  list-style: none;
+}
+navbar li::before {
+  content: " ⇒ ";
+}
+navbar li::after {
+  content: " ⇐ ";
+}
+main {
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 3px 3px 10px black;
+  min-width: 350px;
+  box-sizing: border-box;
+  margin: 1em;
+}
+article {
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+#title {
+  line-height: 2.5em;
+  /*padding: 20px 30px;*/
+}
+#title h4 {
+  color: gray;
+  font-size: 0.8em;
+}
+#title h1 {
+  font-weight: 600;
+  font-size: 32px;
+  /*  margin: 0;*/
+}
+article p {
+  padding: 20px 0;
+}
+em {
+  color: purple;
+}
+section ul,
+section ol {
+  padding-left: 30px;
+}
+table {
+  margin: 30px auto;
+  text-align: center;
+  border-bottom: 1px solid #2163ab;
+}
+caption {
+  font-style: italic;
+  font-weight: 600;
+}
+th {
+  border: 1px solid white;
+  background-color: #2163ab;
+  padding: 20px;
+  color: white;
+  margin: 0;
+  vertical-align: bottom;
+}
+tr:nth-child(odd) {
+  background-color: rgb(231, 231, 231);
+}
+td {
+  padding: 20px 0;
+  border-top: 1px solid lightgray;
+}
+code {
+  background-color: lightgray;
+  padding: 0 3px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+iframe {
+  display: block;
+  margin: auto;
+  width: 79vw;
+  height: calc(79vw * 0.56);
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+aside {
+  width: 100%;
+}
+aside h4 {
+  font-size: 1.5em;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+aside p {
+  margin: 0;
+  padding: 0 0;
+}
+
+aside h6 {
+  font-size: 1.5em;
+  margin: 50px 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+.articolicorrelati {
+  width: 100%;
+}
+
+aside a:hover {
+  color: orange;
+}
+.related {
+  background-color: #e7e7e7;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid gray;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.newsletter p {
+  padding-bottom: 10px;
+}
+footer {
+  background: linear-gradient(180deg, #00526d, #00444e);
+  color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 20px;
+  box-shadow: 3px 3px 3px #000000;
+  text-align: center;
+}
+.footer-copy {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer a {
+  font-weight: 700;
+  color: magenta;
+}
+footer a:hover {
+  color: white;
+}
+.sidecat {
+  font-size: 0.7em;
+}
+.sidedate {
+  font-size: 0.5em;
+  margin-top: 20px;
+  text-align: right;
+}
+form {
+  background-color: rgb(71, 0, 236);
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+form > p {
+  text-align: left;
+}
+fieldset {
+  display: block;
+}
+fieldset button {
+  width: 30%;
+  padding: 10px 10px;
+  display: inline-block;
+  background-color: #2163ab;
+  color: white;
+  border: none;
+  box-shadow: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+fieldset input {
+  width: 60%;
+  min-width: 50px;
+  padding: 10px 10px;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px dashed #2163ab;
+}
+#madeby {
+  margin-top: 50px;
+  font-style: italic;
+  padding: 30px 0;
+  font-size: 0.8em;
+  text-align: center;
+  border: 1px solid orange;
+}
+.bg-gray {
+  color: black;
+  background-color: #e7e7e7;
+}

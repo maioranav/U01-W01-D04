@@ -263,3 +263,37 @@ fieldset input {
   color: black;
   background-color: #e7e7e7;
 }
+
+@media screen and (min-width: 1159px) {
+  header {
+    flex-wrap: nowrap;
+    align-items: unset;
+    flex-direction: row;
+  }
+  main {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  article {
+    width: 60vw;
+  }
+  aside {
+    width: 30vw;
+  }
+  iframe {
+    width: 58vw;
+    height: calc(58vw * 0.56);
+  }
+  .logo-img {
+    align-items: baseline;
+    align-content: baseline;
+  }
+  .logo-img h5 {
+    padding-bottom: 0px;
+  }
+  navbar {
+    justify-content: right;
+  }
+}
